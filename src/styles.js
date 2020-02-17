@@ -64,4 +64,10 @@ export default StyleSheet.create({
     marginLeft: 5,
     marginRight: 10,
   },
+  input: {
+    flex: 1,
+    flexDirection: 'row',
+    marginLeft: this.props.offset || 10,
+    justifyContent: 'center',
+  },
 });

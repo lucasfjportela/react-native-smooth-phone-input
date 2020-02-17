@@ -213,7 +213,7 @@ export default class PhoneInput extends Component {
           </View>
         </TouchableWithoutFeedback>
 
-        <View style={{ flex: 1, flexDirection: 'row', marginLeft: this.props.offset || 10 }}>
+        <View style={styles.input}>
           <Image 
             source={Icons.get('verticalBar')}
             style={styles.verticalBar}
