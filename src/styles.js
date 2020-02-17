@@ -35,6 +35,7 @@ export default StyleSheet.create({
   flag: {
     height: 20,
     width: 30,
+    alignSelf: 'center',
     borderRadius: 2,
     borderWidth: 0.5,
     borderColor: '#cecece',
@@ -60,6 +61,7 @@ export default StyleSheet.create({
     alignSelf: 'center',
     height: 30,
     width: 2,
-    marginRight: 10,
+    marginLeft: 10,
+    marginRight: 5,
   },
 });
