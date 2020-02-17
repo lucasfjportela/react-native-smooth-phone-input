@@ -2,7 +2,7 @@ import first from 'lodash.first';
 import findKey from 'lodash.findkey';
 import Country from './country';
 import numberType from './resources/numberType.json';
-import { AsYouType, parsePhoneNumber } from 'libphonenumber-js';
+import { AsYouType, parsePhoneNumber, ParseError } from 'libphonenumber-js';
 
 let instance = null;
 
@@ -70,7 +70,9 @@ class PhoneNumber {
     try {
       return parsePhoneNumber(number, iso2 && iso2.toUpperCase()); // phoneUtil.parse(number, iso2);
     } catch (err) {
-      console.log(`Exception was thrown: ${err.toString()}`);
+      if (err instanceof ParseError) console.log('ParseError: ', err.message);
+      else console.log(`Exception was thrown: ${err.toString()}`);
+
       return null;
     }
   }
