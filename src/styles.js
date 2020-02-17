@@ -52,14 +52,14 @@ export default StyleSheet.create({
   },
   arrowDown: {
     alignSelf: 'center',
-    marginLeft: 15,
+    marginLeft: 10,
     height: 6,
     width: 11,
   },
   verticalBar: {
     alignSelf: 'center',
-    height: 10,
-    width: 5,
-    marginRight: 15,
+    height: 30,
+    width: 2,
+    marginRight: 10,
   },
 });
