@@ -46,4 +46,12 @@ export default StyleSheet.create({
     color: '#222222',
     justifyContent: 'center',
   },
+  touchable: {
+    justifyContent: 'space-around',
+    flexDirection: 'row',
+  },
+  arrowDown: {
+    height: 5,
+    width: 5,
+  },
 });

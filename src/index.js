@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import { Image, TextInput, TouchableWithoutFeedback, View } from 'react-native';
+import { Image, Text, TextInput, TouchableWithoutFeedback, View } from 'react-native';
 import PropTypes from 'prop-types';
 import Country from './country';
 import Flags from './resources/flags';
+import Icons from './resources/icons';
 import PhoneNumber from './phoneNumber';
 import styles from './styles';
 import CountryPicker from './countryPicker';
@@ -196,11 +197,17 @@ export default class PhoneInput extends Component {
       <View style={[styles.container, this.props.style]}>
         <TouchableWithoutFeedback
           onPress={this.onPressFlag}
+          style={styles.touchable}
           disabled={disabled}
         >
           <Image
             source={Flags.get(iso2)}
             style={[styles.flag, this.props.flagStyle]}
+            onPress={this.onPressFlag}
+          />
+          <Image 
+            source={Icons.get('arrowDown')}
+            style={styles.arrowDown}
             onPress={this.onPressFlag}
           />
         </TouchableWithoutFeedback>
