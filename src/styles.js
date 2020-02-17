@@ -67,6 +67,7 @@ export default StyleSheet.create({
   input: {
     flex: 1,
     flexDirection: 'row',
-    justifyContent: 'center',
+    alignContent: 'center',
+    justifyContent: 'flex-start',
   },
 });
