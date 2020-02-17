@@ -46,6 +46,7 @@ export default StyleSheet.create({
     padding: 0,
     color: '#222222',
     justifyContent: 'center',
+    alignSelf: 'center',
   },
   touchable: {
     justifyContent: 'center',
@@ -68,6 +69,7 @@ export default StyleSheet.create({
     flex: 1,
     flexDirection: 'row',
     alignContent: 'center',
+    alignItems: 'center',
     justifyContent: 'flex-start',
   },
 });
