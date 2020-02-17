@@ -67,7 +67,6 @@ export default StyleSheet.create({
   input: {
     flex: 1,
     flexDirection: 'row',
-    marginLeft: this.props.offset || 10,
     justifyContent: 'center',
   },
 });
