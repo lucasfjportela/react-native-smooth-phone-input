@@ -47,11 +47,13 @@ export default StyleSheet.create({
     justifyContent: 'center',
   },
   touchable: {
-    justifyContent: 'space-around',
+    justifyContent: 'center',
     flexDirection: 'row',
   },
   arrowDown: {
-    height: 5,
-    width: 5,
+    alignSelf: 'center',
+    marginLeft: 10,
+    height: 20,
+    width: 30,
   },
 });
