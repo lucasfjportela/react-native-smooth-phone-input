@@ -35,6 +35,7 @@ export default StyleSheet.create({
   flag: {
     height: 20,
     width: 30,
+    marginLeft: 5,
     alignSelf: 'center',
     borderRadius: 2,
     borderWidth: 0.5,
@@ -63,7 +64,7 @@ export default StyleSheet.create({
     height: 30,
     width: 2,
     marginLeft: 5,
-    marginRight: 10,
+    marginRight: 15,
   },
   input: {
     flex: 1,
