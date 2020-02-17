@@ -61,7 +61,7 @@ export default StyleSheet.create({
     alignSelf: 'center',
     height: 30,
     width: 2,
-    marginLeft: 10,
-    marginRight: 5,
+    marginLeft: 5,
+    marginRight: 10,
   },
 });

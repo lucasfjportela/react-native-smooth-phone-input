@@ -210,14 +210,14 @@ export default class PhoneInput extends Component {
               style={styles.arrowDown}
               onPress={this.onPressFlag}
             />
-            <Image 
-              source={Icons.get('verticalBar')}
-              style={styles.verticalBar}
-            />
           </View>
         </TouchableWithoutFeedback>
 
         <View style={{ flex: 1, marginLeft: this.props.offset || 10 }}>
+          <Image 
+            source={Icons.get('verticalBar')}
+            style={styles.verticalBar}
+          />
           <TextComponent
             ref={ref => {
               this.inputPhone = ref;
