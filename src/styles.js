@@ -52,8 +52,14 @@ export default StyleSheet.create({
   },
   arrowDown: {
     alignSelf: 'center',
-    marginLeft: 10,
-    height: 20,
-    width: 30,
+    marginLeft: 15,
+    height: 6,
+    width: 11,
+  },
+  verticalBar: {
+    alignSelf: 'center',
+    height: 10,
+    width: 5,
+    marginRight: 15,
   },
 });

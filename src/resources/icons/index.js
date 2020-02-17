@@ -11,6 +11,7 @@ class IconResource {
   constructor() {
     this.icons = {
       arrowDown: require('./arrow-down.png'),
+      verticalBar: require('./vertical-bar.png'),
     };
   }
 

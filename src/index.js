@@ -210,6 +210,10 @@ export default class PhoneInput extends Component {
               style={styles.arrowDown}
               onPress={this.onPressFlag}
             />
+            <Image 
+              source={Icons.get('verticalBar')}
+              style={styles.verticalBar}
+            />
           </View>
         </TouchableWithoutFeedback>
 
