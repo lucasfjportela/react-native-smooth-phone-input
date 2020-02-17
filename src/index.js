@@ -197,19 +197,20 @@ export default class PhoneInput extends Component {
       <View style={[styles.container, this.props.style]}>
         <TouchableWithoutFeedback
           onPress={this.onPressFlag}
-          style={styles.touchable}
           disabled={disabled}
         >
-          <Image
-            source={Flags.get(iso2)}
-            style={[styles.flag, this.props.flagStyle]}
-            onPress={this.onPressFlag}
-          />
-          <Image 
-            source={Icons.get('arrowDown')}
-            style={styles.arrowDown}
-            onPress={this.onPressFlag}
-          />
+          <View style={styles.touchable}>
+            <Image
+              source={Flags.get(iso2)}
+              style={[styles.flag, this.props.flagStyle]}
+              onPress={this.onPressFlag}
+            />
+            <Image 
+              source={Icons.get('arrowDown')}
+              style={styles.arrowDown}
+              onPress={this.onPressFlag}
+            />
+          </View>
         </TouchableWithoutFeedback>
 
         <View style={{ flex: 1, marginLeft: this.props.offset || 10 }}>
