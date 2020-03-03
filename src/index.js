@@ -132,6 +132,15 @@ export default class PhoneInput extends Component {
     return PhoneNumber.formatInternational(formattedNumber, iso2);
   };
 
+  getBrazilFormatted = () => {
+    const { formattedNumber } = this.state;
+    const len = formattedNumber.length;
+    const ddd = formattedNumber.slice(0, 2);
+    const phone = formattedNumber.slice(3, len);
+
+    return `(${ddd}) ${phone}`;
+  };
+
   getNumberType() {
     return PhoneNumber.getNumberType(
       this.state.formattedNumber,
