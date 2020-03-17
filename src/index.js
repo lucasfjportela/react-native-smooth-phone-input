@@ -106,12 +106,12 @@ export default class PhoneInput extends Component {
     return countryData.dialCode;
   }
 
-  getAllCountries() {
-    return PhoneNumber.getAllCountries();
+  getCountryName(iso2) {
+    return Countries.get(iso2);
   }
 
-  getCountry(iso2) {
-    return Countries.get(iso2);
+  getAllCountries() {
+    return PhoneNumber.getAllCountries();
   }
 
   getFlag(iso2) {
