@@ -21,7 +21,7 @@ export default class PhoneInput extends Component {
     this.onPressFlag = this.onPressFlag.bind(this);
     this.selectCountry = this.selectCountry.bind(this);
     this.getFlag = this.getFlag.bind(this);
-    this.getCountry = this.getCountry.bind(this);
+    this.getCountryName = this.getCountryName.bind(this);
     this.getISOCode = this.getISOCode.bind(this);
 
     const { countriesList, disabled, initialCountry } = this.props;
@@ -106,7 +106,8 @@ export default class PhoneInput extends Component {
     return countryData.dialCode;
   }
 
-  getCountryName(iso2) {
+  getCountryName() {
+    const { iso2 } = this.state;
     return Countries.get(iso2);
   }
 
@@ -114,7 +115,8 @@ export default class PhoneInput extends Component {
     return PhoneNumber.getAllCountries();
   }
 
-  getFlag(iso2) {
+  getFlag() {
+    const { iso2 } = this.state;
     return Flags.get(iso2);
   }
 
