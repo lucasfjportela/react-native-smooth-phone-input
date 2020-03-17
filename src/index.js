@@ -3,7 +3,6 @@ import { Image, Text, TextInput, TouchableWithoutFeedback, View } from 'react-na
 import PropTypes from 'prop-types';
 import Country from './country';
 import Flags from './resources/flags';
-import Countries from './resources/countries';
 import Icons from './resources/icons';
 import PhoneNumber from './phoneNumber';
 import styles from './styles';
@@ -21,7 +20,7 @@ export default class PhoneInput extends Component {
     this.onPressFlag = this.onPressFlag.bind(this);
     this.selectCountry = this.selectCountry.bind(this);
     this.getFlag = this.getFlag.bind(this);
-    this.getCountryName = this.getCountryName.bind(this);
+    this.getCountryBrazilianName = this.getCountryBrazilianName.bind(this);
     this.getISOCode = this.getISOCode.bind(this);
 
     const { countriesList, disabled, initialCountry } = this.props;
@@ -106,10 +105,8 @@ export default class PhoneInput extends Component {
     return countryData.dialCode;
   }
 
-  getCountryName(iso2) {
-    console.log('iso2', iso2);
-    console.log('model', Countries);
-    return Countries.get(iso2);
+  getCountryBrazilianName(iso2) {
+    return Country.getCountryByBrazilianName(iso2);
   }
 
   getAllCountries() {
