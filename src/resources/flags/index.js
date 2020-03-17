@@ -255,7 +255,9 @@ class FlagResource {
     };
   }
 
-  get = (name) => this.flags[name];
+  get(name) {
+    return this.flags[name];
+  }
 }
 
 export default FlagResource.getInstance();

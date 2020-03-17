@@ -106,8 +106,9 @@ export default class PhoneInput extends Component {
     return countryData.dialCode;
   }
 
-  getCountryName() {
-    const { iso2 } = this.state;
+  getCountryName(iso2) {
+    console.log('iso2', iso2);
+    console.log('model', Countries);
     return Countries.get(iso2);
   }
 
@@ -115,8 +116,7 @@ export default class PhoneInput extends Component {
     return PhoneNumber.getAllCountries();
   }
 
-  getFlag() {
-    const { iso2 } = this.state;
+  getFlag(iso2) {
     return Flags.get(iso2);
   }
 

@@ -247,7 +247,9 @@ class CountryResource {
     };
   }
 
-  get = (name) => this.countries[name];
+  get(name) {
+    return this.countries[name];
+  }
 }
 
 export default CountryResource.getInstance();
